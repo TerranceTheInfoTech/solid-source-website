@@ -2,33 +2,127 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact Solid Source Logistics LLC for business inquiries, contract partnerships, or technology support." />
+  <meta name="author" content="Solid Source Logistics LLC" />
   <title>Contact Us | Solid Source Logistics</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-  <header>
-    <img src="assets/logo.png" alt="Solid Source Logistics LLC Logo" width="300" />
-    <h1>Contact Us</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
+  <!-- Favicon & Stylesheets -->
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/bootstrap-icons.css" rel="stylesheet" />
+  <link href="css/templatemo-topic-listing.css" rel="stylesheet" />
+</head>
+
+<body id="top">
   <main>
-    <section>
-      <h2>We’d Love to Hear from You</h2>
-      <p>Email: <a href="mailto:solidsourcelogistics@gmail.com">solidsourcelogistics@gmail.com</a></p>
-      <p>Phone: <a href="tel:+18433257143">(843) 325-7143</a></p>
-      <p>Address: 7503 Burrowing Cobra, San Antonio, TX 78253</p>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/logo.png" alt="Solid Source Logo" width="160" />
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="capabilities.html">Capabilities</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <header class="site-header d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <h1 class="text-white">Contact Solid Source Logistics</h1>
+            <p class="text-white">Reach out for contract opportunities, technical inquiries, or business partnerships.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contact Info and Form -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="row">
+
+          <!-- Contact Info -->
+          <div class="col-lg-5 col-12 mb-5">
+            <div class="custom-block bg-white shadow-lg p-4 h-100">
+              <h4>Contact Details</h4>
+              <p class="mb-2"><strong>Email:</strong> <a href="mailto:solidsourcelogistics@gmail.com">solidsourcelogistics@gmail.com</a></p>
+              <p class="mb-2"><strong>Phone:</strong> <a href="tel:+18433257143">(843) 325-7143</a></p>
+              <p class="mb-2"><strong>Business Address:</strong><br>7503 Burrowing Cobra,<br>San Antonio, TX 78253</p>
+              <p class="mb-2"><strong>UEI:</strong> PMC9BVM568W4<br><strong>CAGE:</strong> 10ED5</p>
+              <p><strong>SDVOSB Certification:</strong> Pending</p>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-lg-7 col-12">
+            <div class="custom-block bg-white shadow-lg p-4">
+              <h4 class="mb-4">Send Us a Message</h4>
+
+              <form action="#" method="post" role="form">
+                <div class="row">
+                  <div class="col-lg-6 col-12 mb-3">
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Full Name" required />
+                  </div>
+
+                  <div class="col-lg-6 col-12 mb-3">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" required />
+                  </div>
+
+                  <div class="col-12 mb-3">
+                    <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject" />
+                  </div>
+
+                  <div class="col-12 mb-3">
+                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required></textarea>
+                  </div>
+
+                  <div class="col-12">
+                    <button type="submit" class="btn custom-btn">Send Message</button>
+                  </div>
+                </div>
+              </form>
+
+              <!-- Note: You can replace the form action with Formspree, Netlify Forms, or EmailJS -->
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Solid Source Logistics LLC | Veteran-Owned Business</p>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-7 col-12">
+          <p class="copyright-text mb-0">
+            &copy; 2025 Solid Source Logistics LLC | Veteran-Owned | Smart. Secure. Streamlined.
+          </p>
+        </div>
+      </div>
+    </div>
   </footer>
+
+  <!-- JS Files -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/custom.js"></script>
 </body>
 </html>
