@@ -1,66 +1,56 @@
-/* Base Styling */
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  color: #222;
+  color: #222222;
 }
 
 header {
-  background-color: #0046AD;
+  background-color: #0050A4;
   color: white;
-  padding: 20px 0;
   text-align: center;
+  padding: 25px 0;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2em;
-}
-
-header p {
-  font-size: 1.1em;
-  color: #00A651;
-  letter-spacing: 2px;
-  margin-top: 8px;
+header img {
+  max-width: 300px;
 }
 
 nav {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 nav a {
-  margin: 0 12px;
   color: white;
+  margin: 0 15px;
   text-decoration: none;
   font-weight: 500;
 }
 
 nav a:hover {
-  text-decoration: underline;
-  color: #00A651;
+  color: #007A33;
 }
 
 main {
-  padding: 40px 20px;
   max-width: 1000px;
-  margin: auto;
+  margin: 40px auto;
+  padding: 20px;
   line-height: 1.6;
 }
 
-section h2 {
-  color: #0046AD;
+h2 {
+  color: #0050A4;
 }
 
 a {
-  color: #00A651;
+  color: #007A33;
 }
 
 footer {
-  background-color: #222;
+  background-color: #222222;
   color: white;
   text-align: center;
-  padding: 20px 10px;
+  padding: 20px;
   font-size: 0.9em;
 }
