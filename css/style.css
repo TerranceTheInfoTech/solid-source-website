@@ -54,3 +54,11 @@ footer {
   padding: 20px;
   font-size: 0.9em;
 }
+.nav-link {
+  color: #222 !important; /* Replace #222 with your preferred text color */
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #0d6efd !important; /* Highlight color */
+}

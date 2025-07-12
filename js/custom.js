@@ -8,6 +8,15 @@
       $(".navbar-collapse").collapse('hide');
     });
     
+    // Shrink header on scroll
+    $(window).on('scroll', function () {
+      if ($("#mainNav").offset().top > 50) {
+      $("#mainNav").addClass("navbar-shrink");
+    } else {
+      $("#mainNav").removeClass("navbar-shrink");
+    }
+  });
+
     // CUSTOM LINK
     $('.smoothscroll').click(function(){
       var el = $(this).attr('href');
