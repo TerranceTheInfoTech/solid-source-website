@@ -62,3 +62,19 @@ footer {
 .nav-link.active {
   color: #0d6efd !important; /* Highlight color */
 }
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.carousel-caption h5 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.carousel-caption p {
+  color: #ddd;
+  font-size: 1.2rem;
+}

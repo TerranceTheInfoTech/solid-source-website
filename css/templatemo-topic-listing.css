@@ -135,49 +135,6 @@ strong {
 
 
 /*---------------------------------------
-  Nav bar             
------------------------------------------*/
-/* Extra Small Shrinking Navbar */
-/* Navbar Gradient Background */
-.navbar {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  background: linear-gradient(90deg, #009999 0%, #66cccc 100%) !important;
-  transition: all 0.3s ease-in-out;
-}
-
-.navbar-shrink {
-  padding-top: 0.25rem !important;
-  padding-bottom: 0.25rem !important;
-  background: linear-gradient(90deg, #009999 0%, #66cccc 100%) !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-/* Logo Scaling */
-.navbar-brand img {
-  height: auto;
-  max-height: 64px;
-  transition: max-height 0.3s ease-in-out;
-}
-
-.navbar-shrink .navbar-brand img {
-  max-height: 40px;
-}
-
-/* Nav Link Visibility */
-.nav-link {
-  color: white !important;
-  font-weight: 600;
-}
-
-.nav-link:hover,
-.nav-link.active {
-  color: #ffd700 !important; /* Optional: golden highlight */
-}
-
-
-
-/*---------------------------------------
   SECTION               
 -----------------------------------------*/
 .section-padding {
@@ -292,7 +249,7 @@ strong {
 -----------------------------------------*/
 .site-header {
   background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-  padding-top: 180px;
+  padding-top: 150px;
   padding-bottom: 80px;
 }
 
