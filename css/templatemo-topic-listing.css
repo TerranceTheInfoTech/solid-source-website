@@ -45,6 +45,13 @@ https://templatemo.com/tm-590-topic-listing
   --font-weight-bold:             700;
 }
 
+:root {
+  --ssl-blue: #007BA7;   /* Blue tone */
+  --ssl-green: #00B894;  /* Green tone */
+  --ssl-gradient: linear-gradient(135deg, var(--ssl-blue), var(--ssl-green));
+}
+
+
 body {
   background-color: var(--white-color);
   font-family: var(--body-font-family); 
@@ -197,6 +204,19 @@ strong {
   color: var(--primary-color);
 }
 
+.badge.bg-design,
+.badge.bg-finance,
+.badge.bg-advertising,
+.badge.bg-music,
+.badge.bg-education {
+  background-color: var(--ssl-blue);
+}
+
+.nav-tabs .nav-link.active {
+  background: var(--ssl-gradient);
+  color: #fff;
+}
+
 
 /*---------------------------------------
   CUSTOM ICON COLOR               
@@ -210,10 +230,10 @@ strong {
   CUSTOM BUTTON               
 -----------------------------------------*/
 .custom-btn {
-  background: var(--custom-btn-bg-color);
-  border: 2px solid transparent;
+  background: var(--ssl-gradient);
+  border: none;
   border-radius: var(--border-radius-large);
-  color: var(--white-color);
+  color: #fff;
   font-size: var(--btn-font-size);
   font-weight: var(--font-weight-semibold);
   line-height: normal;
@@ -222,7 +242,7 @@ strong {
 }
 
 .custom-btn:hover {
-  background: var(--custom-btn-bg-hover-color);
+  background: #00a68a;
   color: var(--white-color);
 }
 
@@ -288,7 +308,7 @@ strong {
 }
 
 .navbar {
-  background: transparent;
+  background: var(--ssl-gradient);
   border-bottom: 1px solid rgba(128, 208, 199, 0.35);
   z-index: 9;
 }
@@ -491,6 +511,7 @@ strong {
   overflow: hidden;
   padding-top: 150px;
   padding-bottom: 150px;
+   background: var(--ssl-gradient);
 }
 
 .hero-section .input-group {
