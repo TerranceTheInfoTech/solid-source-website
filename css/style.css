@@ -1,80 +1,98 @@
+:root {
+  --ssl-blue: #007BA7;
+  --ssl-green: #00B894;
+  --ssl-gradient: linear-gradient(90deg, #007BA7 0%, #00B894 100%);
+  --ssl-gold: #FFD700;
+}
+
+/* GENERAL OVERRIDES */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-  color: #222222;
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
 }
 
-header {
-  background-color: #0050A4;
-  color: white;
-  text-align: center;
-  padding: 25px 0;
+/* NAVBAR */
+.navbar {
+  background: var(--ssl-gradient);
+  transition: all 0.3s ease;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-header img {
-  max-width: 300px;
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-nav {
-  margin-top: 10px;
-}
-
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-nav a:hover {
-  color: #007A33;
-}
-
-main {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 20px;
-  line-height: 1.6;
-}
-
-h2 {
-  color: #0050A4;
-}
-
-a {
-  color: #007A33;
-}
-
-footer {
-  background-color: #222222;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
-}
-.nav-link {
-  color: #222 !important; /* Replace #222 with your preferred text color */
-}
-
-.nav-link:hover,
-.nav-link.active {
-  color: #0d6efd !important; /* Highlight color */
-}
-.carousel-caption {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.carousel-caption h5 {
+/* NAV LINKS */
+.navbar .nav-link {
   color: #fff;
-  font-size: 2rem;
-  font-weight: 700;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.carousel-caption p {
-  color: #ddd;
-  font-size: 1.2rem;
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--ssl-gold) !important;
+}
+
+/* HERO SECTION */
+.hero-section {
+  background: var(--ssl-gradient);
+  color: white;
+  padding: 100px 0;
+}
+
+/* BADGE COLORS */
+.badge.bg-design,
+.badge.bg-finance,
+.badge.bg-advertising,
+.badge.bg-music,
+.badge.bg-education {
+  background-color: var(--ssl-blue);
+}
+
+/* ACTIVE TABS */
+.nav-tabs .nav-link.active {
+  background: var(--ssl-gradient);
+  color: #fff;
+}
+
+/* FOOTER */
+.site-footer {
+  background: var(--ssl-gradient);
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.site-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--ssl-gold);
+}
+
+/* CUSTOM BUTTONS */
+.custom-btn {
+  background: var(--ssl-gradient);
+  color: white;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.custom-btn:hover {
+  background: var(--ssl-green);
+  color: white;
+}
+
+/* SECTION TITLES */
+.section-title {
+  font-weight: 700;
+  color: var(--ssl-blue);
 }

@@ -28,6 +28,35 @@
       }
     });
 
+    // Smooth scrolling for anchor links
+    $('.click-scroll').on('click', function (e) {
+      e.preventDefault();
+      const target = $(this).attr('href');
+      const scrollOffset = $(target).offset().top - 70;
+
+      $('html, body').animate({
+        scrollTop: scrollOffset
+      }, 800);
+    });
+
+    // AOS (Animate On Scroll) Initialization (optional)
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+    });
+
+    // Sticky navbar
+    $(window).on('scroll', function () {
+  if ($(this).scrollTop() > 50) {
+    $('.navbar').addClass('sticky');
+  } else {
+    $('.navbar').removeClass('sticky');
+  }
+});
+
+
+
     $(window).on('scroll', function(){
       function isScrollIntoView(elem, index) {
         var docViewTop = $(window).scrollTop();
