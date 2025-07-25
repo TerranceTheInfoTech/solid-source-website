@@ -39,21 +39,14 @@
       }, 800);
     });
 
-    // AOS (Animate On Scroll) Initialization (optional)
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-    });
-
     // Sticky navbar
     $(window).on('scroll', function () {
-  if ($(this).scrollTop() > 50) {
-    $('.navbar').addClass('sticky');
-  } else {
-    $('.navbar').removeClass('sticky');
-  }
-});
+      if ($(this).scrollTop() > 50) {
+        $('.navbar').addClass('sticky');
+      } else {
+        $('.navbar').removeClass('sticky');
+      }
+    });
 
 
 

@@ -12,12 +12,13 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-icons.css" rel="stylesheet">
     <link href="css/templatemo-topic-listing.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-GF3tzlx0El+N1RaEG1pvVkwDUPCCRb3oP9CO7Q/DCu1sh9RTrtwx/HKKYC2Dz3n/vWwyXnQqymcGOneY8VKi9w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
       #mainNav {
         transition: all 0.3s ease;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
       }
       #mainNav.shrink {
         padding-top: 0.5rem;
@@ -39,7 +40,7 @@
       }
       /* Match navbar color while scrolling through About section */
       .navbar.about-active {
-        background-color: #00796b !important;
+        background-color: #B2DFDB !important; /*Light Teal*/
       }
 
     </style>
@@ -89,9 +90,9 @@
         <div class="container text-center">
               <h2 class="mb-4">About Solid Source Logistics</h2>
              
-              <!-- Optional: Add an image below the text -->
+              <!-- Optional: Add an image below the text 
               <img src="images/about-us.jpg" class="img-fluid rounded shadow mt-4" alt="About Solid Source Logistics" style="max-width: 100%; height: auto;">
-
+              -->
               <p class="text-dark">
                 Solid Source Logistics LLC is a Service-Disabled Veteran-Owned Small Business (SDVOSB) based in San Antonio, Texas. 
                 We specialize in secure, efficient IT services, cybersecurity, and logistics support tailored for both government and commercial sectors.
@@ -268,6 +269,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
     <script src="js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-CTDhR2Ei/nV4JbU5b9H6c0mAn57foV4DH6h1LGJLlPchrn1MGGUZ2rJbYzzqJ6sOQRK9Bv0yYeR7xN4DW/V3mw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
       window.addEventListener('scroll', function () {
         const nav = document.getElementById('mainNav');
@@ -275,21 +277,6 @@
           nav.classList.add('shrink');
         } else {
           nav.classList.remove('shrink');
-        }
-      });
-    </script>
-    <script>
-      const mainNav = document.getElementById("mainNav");
-      const aboutSection = document.getElementById("about");
-
-      window.addEventListener("scroll", () => {
-        const rect = aboutSection.getBoundingClientRect();
-        const inView = rect.top <= 60 && rect.bottom >= 60;
-
-        if (inView) {
-          mainNav.classList.add("about-active");
-        } else {
-          mainNav.classList.remove("about-active");
         }
       });
     </script>
@@ -313,28 +300,7 @@
         window.addEventListener('scroll', updateNavbarColorOnScroll);
         updateNavbarColorOnScroll(); // Run on load
       });
-      <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          const navbar = document.querySelector('.navbar');
-          const aboutSection = document.querySelector('#about');
-
-          function updateNavbarColorOnScroll() {
-            const sectionTop = aboutSection.offsetTop;
-            const sectionHeight = aboutSection.offsetHeight;
-            const scrollPosition = window.scrollY + 80;
-
-            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-              navbar.classList.add('about-active');
-            } else {
-              navbar.classList.remove('about-active');
-            }
-          }
-
-          window.addEventListener('scroll', updateNavbarColorOnScroll);
-          updateNavbarColorOnScroll(); // Run on page load
-        });
-      </script>
-
+      
     </script>
   </body>
 </html>
