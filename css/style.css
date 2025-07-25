@@ -1,17 +1,70 @@
+
+/* 
+  Solid Source Logistics – Unified CSS 
+  Combines TemplateMo base and custom overrides 
+*/
+
 :root {
+  /* Core Colors */
+  --white-color: #ffffff;
+  --primary-color: #13547a;
+  --secondary-color: #80d0c7;
+  --section-bg-color: #f0f8ff;
+  --custom-btn-bg-color: #80d0c7;
+  --custom-btn-bg-hover-color: #13547a;
+  --dark-color: #000000;
+  --p-color: #717275;
+  --border-color: #7fffd4;
+  --link-hover-color: #13547a;
+
+  /* SSL Custom Brand */
   --ssl-blue: #007BA7;
   --ssl-green: #00B894;
-  --ssl-gradient: linear-gradient(90deg, #007BA7 0%, #00B894 100%);
+  --ssl-gradient: linear-gradient(135deg, var(--ssl-blue), var(--ssl-green));
   --ssl-gold: #FFD700;
+
+  /* Fonts */
+  --body-font-family: 'Open Sans', sans-serif;
+  --title-font-family: 'Montserrat', sans-serif;
+
+  /* Font Sizes */
+  --h1-font-size: 58px;
+  --h2-font-size: 46px;
+  --h3-font-size: 32px;
+  --h4-font-size: 28px;
+  --h5-font-size: 24px;
+  --h6-font-size: 22px;
+  --p-font-size: 20px;
+  --menu-font-size: 14px;
+  --btn-font-size: 18px;
+  --copyright-font-size: 16px;
+
+  /* Border Radius */
+  --border-radius-large: 100px;
+  --border-radius-medium: 20px;
+  --border-radius-small: 10px;
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
 }
 
-/* GENERAL OVERRIDES */
+/* Typography */
 body {
-  font-family: 'Open Sans', sans-serif;
+  background-color: var(--white-color);
+  font-family: var(--body-font-family);
   scroll-behavior: smooth;
 }
 
-/* NAVBAR */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--title-font-family);
+  font-weight: var(--font-weight-semibold);
+  color: var(--dark-color);
+}
+
+/* Navbar */
 .navbar {
   background: var(--ssl-gradient);
   transition: all 0.3s ease;
@@ -27,7 +80,6 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* NAV LINKS */
 .navbar .nav-link {
   color: #fff;
   font-weight: 500;
@@ -39,29 +91,31 @@ body {
   color: var(--ssl-gold) !important;
 }
 
-/* HERO SECTION */
+/* Hero Section */
 .hero-section {
   background: var(--ssl-gradient);
   color: white;
   padding: 100px 0;
 }
 
-/* BADGE COLORS */
-.badge.bg-design,
-.badge.bg-finance,
-.badge.bg-advertising,
-.badge.bg-music,
-.badge.bg-education {
-  background-color: var(--ssl-blue);
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
 }
 
-/* ACTIVE TABS */
-.nav-tabs .nav-link.active {
-  background: var(--ssl-gradient);
-  color: #fff;
+/* Section Titles */
+.section-title {
+  font-weight: 700;
+  color: var(--ssl-blue);
 }
 
-/* FOOTER */
+/* Footer */
 .site-footer {
   background: var(--ssl-gradient);
   color: #fff;
@@ -78,7 +132,7 @@ body {
   color: var(--ssl-gold);
 }
 
-/* CUSTOM BUTTONS */
+/* Buttons */
 .custom-btn {
   background: var(--ssl-gradient);
   color: white;
@@ -91,8 +145,17 @@ body {
   color: white;
 }
 
-/* SECTION TITLES */
-.section-title {
-  font-weight: 700;
-  color: var(--ssl-blue);
+/* Badges */
+.badge.bg-design,
+.badge.bg-finance,
+.badge.bg-advertising,
+.badge.bg-music,
+.badge.bg-education {
+  background-color: var(--ssl-blue);
+}
+
+/* Tabs */
+.nav-tabs .nav-link.active {
+  background: var(--ssl-gradient);
+  color: #fff;
 }
