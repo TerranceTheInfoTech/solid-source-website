@@ -32,6 +32,18 @@
         height: 120px;
         transition: height 0.3s ease;
       }
+      .bg-teal {
+        background-color: #00796b; /* deep teal green */
+        color: white;
+      }
+      .bg-teal p {
+        color: white;
+      }
+      /* Match navbar color while scrolling through About section */
+      .navbar.about-active {
+        background-color: #00796b !important;
+      }
+
     </style>
   </head>
 
@@ -40,7 +52,7 @@
       <nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm" id="mainNav">
         <div class="container">
           <a class="navbar-brand d-flex align-items-center" href="#top">
-            <img src="assets/logo-removebg.png" alt="Solid Source Logistics Logo" id="navLogo" class="me-2">
+            <img src="assets/logo-whiteout.png" alt="Solid Source Logistics Logo" id="navLogo" class="me-2">
           </a>
 
 
@@ -66,7 +78,7 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-5 col-12 text-center">
-              <h1 class="hero-title text-white mt-4 mb-5">Smart. Secure. Streamlined.</h1>
+              <h1 class="hero-title text-white mb-5" style="margin-top: 100px;">Smart. Secure. Streamlined.</h1>
               <!-- Injected SSL slogan -->
               <h2 class="text-white mb-4" style="font-weight: 500;">
                 Solid Source Logistics delivers professional IT services, cybersecurity solutions, and logistics support nationwide.
@@ -75,12 +87,10 @@
       <!-- About Section -->
 
 
-      <section class="section-padding" id="about">
-        <div class="container">
-          <div class="row text-center justify-content-center">
-            <div class="col-lg-8 col-md-10 col-12">
+      <section id="about" class="about-section full-width-section text-white py-5">
+        <div class="container text-center">
               <h2 class="mb-4">About Solid Source Logistics</h2>
-
+             
               <!-- Optional: Add an image below the text -->
               <img src="images/about-us.jpg" class="img-fluid rounded shadow mt-4" alt="About Solid Source Logistics" style="max-width: 100%; height: auto;">
 
@@ -102,7 +112,7 @@
 
 
               <!-- End Injected Content -->
-
+            <div class="text-center mt-3">
               <a href="#services" class="btn custom-btn smoothscroll mb-4">Explore Services</a>
             </div>
           </div>
@@ -157,7 +167,7 @@
           <div class="row justify-content-center text-center">
             <div class="col-lg-8 col-md-10 col-12">
               <h2 class="mb-4">Our Capabilities</h2>
-              <ul class="list-unstyled">
+              <ul class="list-unstyled text-start">
                 <li class="d-flex align-items-start mb-3">
                   <i class="bi-gear-fill fs-3 me-3"></i>
                   <p class="mb-0">End-to-end systems integration and IT infrastructure deployment</p>
@@ -179,6 +189,13 @@
                   <p class="mb-0">24/7 helpdesk support and veteran-focused client training</p>
                 </li>
               </ul>
+
+              <!-- Download Button (placed after the list) -->
+              <div class="text-center mt-4">
+                <a href="assets/SSL_capability_statement.pdf" class="btn custom-btn" target="_blank" download>
+                  <i class="bi-download me-2"></i> View or Download Our Capability Statement
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -263,6 +280,63 @@
         }
       });
     </script>
+    <script>
+      const mainNav = document.getElementById("mainNav");
+      const aboutSection = document.getElementById("about");
 
+      window.addEventListener("scroll", () => {
+        const rect = aboutSection.getBoundingClientRect();
+        const inView = rect.top <= 60 && rect.bottom >= 60;
+
+        if (inView) {
+          mainNav.classList.add("about-active");
+        } else {
+          mainNav.classList.remove("about-active");
+        }
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const navbar = document.querySelector('.navbar');
+        const aboutSection = document.querySelector('#about');
+
+        function updateNavbarColorOnScroll() {
+          const sectionTop = aboutSection.offsetTop;
+          const sectionHeight = aboutSection.offsetHeight;
+          const scrollPosition = window.scrollY + 80;
+
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            navbar.classList.add('about-active');
+          } else {
+            navbar.classList.remove('about-active');
+          }
+        }
+
+        window.addEventListener('scroll', updateNavbarColorOnScroll);
+        updateNavbarColorOnScroll(); // Run on load
+      });
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const navbar = document.querySelector('.navbar');
+          const aboutSection = document.querySelector('#about');
+
+          function updateNavbarColorOnScroll() {
+            const sectionTop = aboutSection.offsetTop;
+            const sectionHeight = aboutSection.offsetHeight;
+            const scrollPosition = window.scrollY + 80;
+
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+              navbar.classList.add('about-active');
+            } else {
+              navbar.classList.remove('about-active');
+            }
+          }
+
+          window.addEventListener('scroll', updateNavbarColorOnScroll);
+          updateNavbarColorOnScroll(); // Run on page load
+        });
+      </script>
+
+    </script>
   </body>
 </html>

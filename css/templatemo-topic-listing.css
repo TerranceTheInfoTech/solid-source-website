@@ -500,6 +500,13 @@ strong {
 .navbar-toggler .navbar-toggler-icon::after {
   top: 8px;
 }
+.navbar.about-active {
+  background-color: #00796b !important;
+}
+.navbar.about-active {
+  background-color: #B2DFDB !important; /* Match light teal */
+  transition: background-color 0.4s ease-in-out;
+}
 
 
 /*---------------------------------------
@@ -1122,6 +1129,10 @@ blockquote {
     font-size: var(--copyright-font-size);
     padding: 10px;
   }
+  .navbar {
+    transition: background-color 0.4s ease-in-out;
+  }
+
 
   .featured-section {
     border-radius: 0 0 80px 80px;
@@ -1150,6 +1161,19 @@ blockquote {
     padding-top: 30px;
     padding-bottom: 0;
   }
+  /* Make About section full-width and light teal with rounded bottom corners */
+  .about-section {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    background-color: #B2DFDB; /* Light teal */
+    border-radius: 0 0 100px 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #000; /* Make text readable */
+    position: relative;
+    z-index: 1;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
