@@ -64,9 +64,9 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-lg-auto me-lg-4">
               <li class="nav-item"><a class="nav-link" href="#top">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>             
               <li class="nav-item"><a class="nav-link" href="#capabilities">Capabilities</a></li>
+              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
               <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
           </div>
@@ -74,14 +74,52 @@
       </nav>
 
       <header class="site-header d-flex flex-column justify-content-center align-items-center">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-5 col-12 text-center">
-              <h1 class="hero-title text-white mb-5" style="margin-top: 100px;">Smart. Secure. Streamlined.</h1>
+        
+                    <!-- ===== HERO SECTION ===== -->
+                    <section id="hero" 
+                      style="
+                        position: relative; 
+                        background: url('assets/datacenter.jpg') center center / cover no-repeat; 
+                        width: 100%; 
+                        min-height: 90vh; 
+                        display: flex; 
+                        align-items: center; 
+                        justify-content: center; 
+                        text-align: center; 
+                        color: white; 
+                        margin: 0; 
+                        padding: 0; 
+                      ">
+                      
+                      <!-- Gradient Overlay -->
+                      <div style="
+                        position: absolute; 
+                        top: 0; left: 0; 
+                        width: 100%; 
+                        height: 100%; 
+                        background: linear-gradient(135deg, rgba(0,123,167,0.85), rgba(0,184,148,0.85));
+                      "></div>
+                      
+                      <!-- Text Content -->
+                      <div style="position: relative; z-index: 2; max-width: 800px; padding: 20px;">
+                        <h1 style="font-size: 3rem; font-weight: bold; margin-bottom: 10px;">Smart. Secure. Streamlined.</h1>
+                        <p class="text-white" style="font-size: 1.25rem; margin-bottom: 25px;">
+                          Technology & Logistics Solutions You Can Trust
+                        </p>
+                        <p class="text-center; text-white" style="font-size: 1rem; margin-bottom: 100px;">
+                          Solid Source Logistics (SDVOSB) delivers IT solutions, cybersecurity services, and logistics support for businesses and government agencies nationwide.
+                        </p>
+                        <div class="text-center mt-3">
+                          <a href="#contact" class="btn custom-btn smoothscroll mb-4">Request a Consultation</a>
+                        </div>
+                    </section>
               <!-- Injected SSL slogan -->
-              <h2 class="text-white mb-4" style="font-weight: 500;">
+              <h2 class="text-white mb-4; text-center" style="font-weight: 500;">
                 Solid Source Logistics delivers professional IT services, cybersecurity solutions, and logistics support nationwide.
               </h2>
+
+
+
 
       <!-- About Section -->
 
@@ -94,11 +132,14 @@
               <img src="images/about-us.jpg" class="img-fluid rounded shadow mt-4" alt="About Solid Source Logistics" style="max-width: 100%; height: auto;">
               -->
               <p class="text-dark">
-                Solid Source Logistics LLC is a Service-Disabled Veteran-Owned Small Business (SDVOSB) based in San Antonio, Texas. 
-                We specialize in secure, efficient IT services, cybersecurity, and logistics support tailored for both government and commercial sectors.
+                Solid Source Logistics LLC is a proud Service-Disabled Veteran-Owned Small Business (SDVOSB) headquartered in San Antonio, Texas. 
+                We provide a unique blend of technology expertise and operational efficiency, offering secure and scalable solutions in IT services, cybersecurity, and logistics support. 
+                Our mission is to empower organizations—both government agencies and commercial enterprises—to operate with confidence in today’s fast-paced, security-conscious environment.
               </p>
               <p class="text-dark">
-                With a foundation built on military discipline and technical expertise, our team brings reliable solutions that help organizations stay smart, secure, and streamlined.
+                Our services are tailored to meet the demands of complex operations, whether it’s safeguarding sensitive data, modernizing IT infrastructure, or optimizing supply chain performance. 
+                Leveraging military discipline, precision planning, and advanced technical skills, we deliver results that exceed expectations—on time, within budget, and aligned with your strategic goals. 
+                At Solid Source Logistics, we don’t just provide services; we become a trusted partner dedicated to keeping your operations smart, secure, and streamlined for the long term.
               </p>
 
 
@@ -118,47 +159,6 @@
         </div>
       </header>
 
-      <!-- Services Section -->
-      <section class="section-padding" id="services">
-        <div class="container">
-          <div class="row text-center">
-
-            <div class="col-12 mb-5">
-              <h2 class="mb-4">Our Services</h2>
-              <p class="text-muted">We offer a range of specialized solutions to meet government and commercial needs.</p>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-              <div class="custom-block custom-block-topics-listing bg-white shadow-lg">
-                <div class="custom-block-body">
-                  <h5 class="mb-3">IT Support & Consulting</h5>
-                  <p>End-to-end technology solutions, systems integration, and helpdesk support for mission-critical operations.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-              <div class="custom-block custom-block-topics-listing bg-white shadow-lg">
-                <div class="custom-block-body">
-                  <h5 class="mb-3">Cybersecurity Solutions</h5>
-                  <p>Threat monitoring, vulnerability assessments, and compliance alignment (FISMA, NIST, etc.).</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-              <div class="custom-block custom-block-topics-listing bg-white shadow-lg">
-                <div class="custom-block-body">
-                  <h5 class="mb-3">Logistics & Asset Management</h5>
-                  <p>Secure warehousing, inventory tracking, and distribution coordination for federal programs.</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-      <!-- End Services Section -->
 
       <!-- Capabilities Section -->
       <section class="section-padding" id="capabilities">
@@ -201,6 +201,94 @@
       </section>
       <!-- End Capabilities Section -->
 
+            <!-- ===== SERVICES SECTION ===== -->
+            <section id="services" style="padding: 80px 20px; background: #f9f9f9;">
+              <div style="max-width: 1200px; margin: auto; text-align: center;">
+                <h2 style="font-size: 2.2rem; margin-bottom: 40px;">Our Core Services</h2>
+
+                <div class="services-grid">
+
+                  <!-- Technology & IT Solutions -->
+                  <div class="service-card">
+                    <div class="icon">💻</div>
+                    <h3>Managed IT Services</h3>
+                    <p>Proactive 24/7 monitoring, helpdesk, and maintenance to keep your business running smoothly.</p>
+                  </div>
+
+                  <div class="service-card">
+                    <div class="icon">☁️</div>
+                    <h3>Cloud Solutions & Migration</h3>
+                    <p>Secure transition to AWS, Azure, or private cloud environments with minimal downtime.</p>
+                  </div>
+
+                  <div class="service-card">
+                    <div class="icon">🔌</div>
+                    <h3>IT Infrastructure Deployment</h3>
+                    <p>Full installation of servers, networking equipment, and secure connectivity solutions.</p>
+                  </div>
+
+                  <!-- Cybersecurity -->
+                  <div class="service-card">
+                    <div class="icon">🛡️</div>
+                    <h3>Cybersecurity Risk Assessment</h3>
+                    <p>NIST, CMMC, and HIPAA compliance readiness for peace of mind and regulatory protection.</p>
+                  </div>
+
+                  <div class="service-card">
+                    <div class="icon">🕵️</div>
+                    <h3>Penetration Testing</h3>
+                    <p>Simulated cyberattacks to identify and address security vulnerabilities before they’re exploited.</p>
+                  </div>
+
+                  <div class="service-card">
+                    <div class="icon">🔒</div>
+                    <h3>Endpoint Protection</h3>
+                    <p>Advanced malware defense, data encryption, and secure device management.</p>
+                  </div>
+
+                  <!-- Logistics -->
+                  <div class="service-card">
+                    <div class="icon">🚚</div>
+                    <h3>Logistics & Supply Chain</h3>
+                    <p>Efficient inventory control, asset tracking, and distribution management services.</p>
+                  </div>
+
+                  <div class="service-card">
+                    <div class="icon">📦</div>
+                    <h3>Procurement & Vendor Management</h3>
+                    <p>Strategic sourcing and supplier relationship management for cost-effective operations.</p>
+                  </div>
+
+                  <div class="service-card">
+                    <div class="icon">♻️</div>
+                    <h3>Reverse Logistics</h3>
+                    <p>Handling product returns, repairs, and recycling with efficiency and sustainability in mind.</p>
+                  </div>
+
+                  <!-- Government Contracting -->
+                  <div class="service-card">
+                    <div class="icon">🏛️</div>
+                    <h3>Government Contract Support</h3>
+                    <p>Proposal writing, compliance guidance, and contract management for public sector projects.</p>
+                  </div>
+
+                  <div class="service-card">
+                    <div class="icon">👨‍💻</div>
+                    <h3>Technical Staffing</h3>
+                    <p>Deploying cleared, skilled personnel to support federal, state, and local contracts.</p>
+                  </div>
+
+                  <div class="service-card">
+                    <div class="icon">📜</div>
+                    <h3>Regulatory Compliance Consulting</h3>
+                    <p>Helping clients meet industry and government standards including NIST and FISMA.</p>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+            <!-- End Services Section -->
+
       <!-- Contact Section -->
       <section class="section-padding" id="contact">
         <div class="container">
@@ -234,34 +322,26 @@
       <!-- End Contact Section -->
 
       <!-- Site footer start -->
-      <footer class="site-footer section-padding" id="contact">
-        <div class="container">
-          <div class="row">
-
-            <div class="col-lg-4 col-12 mb-4 mb-lg-0">
-              <h5 class="site-footer-title mb-3">Contact Info</h5>
-              <p class="text-white d-flex mb-1">
-                <i class="bi-geo-alt me-2"></i>
-                7503 Burrowing Cobra, San Antonio, TX 78253
-              </p>
-              <p class="text-white d-flex">
-                <i class="bi-telephone me-2"></i>
-                (843) 325-7143
-              </p>
-              <p class="text-white d-flex">
-                <i class="bi-envelope me-2"></i>
-                <a href="mailto:solidsourcelogistics@gmail.com" class="site-footer-link">
-                  solidsourcelogistics@gmail.com
-                </a>
-              </p>
-            </div>
-
-            <div class="col-lg-8 col-12">
-              <p class="text-white">© 2024 Solid Source Logistics LLC. All rights reserved.</p>
-            </div>
+      <footer class="site-footer section-padding bg-white text-dark">
+        <div class="container text-center">
+          
+          <!-- Company Logo -->
+          <div class="mb-3">
+            <img src="assets/logo-skyline.png" alt="Solid Source Logistics Logo" style="max-height: 70px;">
           </div>
+
+          <!-- Social Media Icons -->
+          <div class="mb-3">
+            <a href="https://www.linkedin.com/in/terrance-johnson-57405b248/" target="_blank" class="text-muted me-3"><i class="bi-linkedin fs-4"></i></a>
+            <a href="https://www.facebook.com/solidsourcelogistics" target="_blank" class="text-muted me-3"><i class="bi-facebook fs-4"></i></a>
+            <a href="https://twitter.com/solidsourcelogistics" target="_blank" class="text-muted"><i class="bi-twitter fs-4"></i></a>
+          </div>
+
+          <!-- Legal -->
+          <p class="mb-0">© 2024 Solid Source Logistics LLC. All rights reserved.</p>
         </div>
       </footer>
+
     </main>
 
     <!-- JAVASCRIPT FILES -->
