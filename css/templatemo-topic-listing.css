@@ -1164,6 +1164,10 @@ blockquote {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     background-color: #B2DFDB; /* Light teal */
+<<<<<<< HEAD
+=======
+    background-image: url("../assets/Transparent\ Server\ Room.png");
+>>>>>>> a938042b699bc4f0f5f7a4298dbc5bc28fdb8d3f
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
